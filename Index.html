@@ -11,7 +11,7 @@
 
     <header>
         <div class="logo">
-            <img src="Project Files (Frontend)/Project Files/Images/EMS.svg" alt="E-Millennial Logo" style="height: 40px; display: block;">
+            <img src="Images/EMS.svg" alt="E-Millennial Logo" style="height: 40px; display: block;">
         </div>
         <nav>
             <a href="#intro">Home</a>
@@ -19,64 +19,67 @@
             <a href="#shop">Shop</a>
         </nav>
         <button id="cart-badge-btn" style="display: flex; align-items: center; gap: 8px;">
-            <img src="Project Files (Frontend)/Project Files/Images/cart.svg" alt="Cart Icon" style="width: 18px; height: 18px; filter: invert(1);">
+            <img src="Images/cart.svg" alt="Cart Icon" style="width: 18px; height: 18px; filter: invert(1);">
             Cart <span id="cart-count">0</span>
         </button>
     </header>
 
     <main>
         <section id="intro">
-            <img src="Project Files (Frontend)/Project Files/Images/heroImage.png" alt="E-Millennial Banner" style="max-width: 100%; height: auto; margin-bottom: 20px; border-radius: 8px;">
-            <h1>Gadgets for the Next Generation</h1>
-            <p>Your one-stop tech hub tailored for African Millennials.</p>
+            <div class="hero-content">
+                <h1>THE E-MILLENNIAL STORE</h1>
+                <p>Your one-stop tech hub tailored for African Millennials.</p>
+                <a href="#shop" class="shop-now-btn">SHOP NOW</a>
+            </div>
+            <img src="Images/heroImage.png" alt="E-Millennial Banner" style="max-width: 100%; height: auto; margin-top: 20px; border-radius: 8px;">
         </section>
 
         <section id="about">
             <h2>About Us</h2>
-            <p>Providing premium, affordable, and accessible gadgets across the continent.</p>
+            <p>E-Millennial Store is a hypothetical online store for gadgets we believe every 'Millennial' or 'Gen-Z' should have today. We've got mobile phones, laptops, smartwatches and other gadgets. Explore all our gadgets and choose the ones that suit you.</p>
         </section>
 
         <section id="shop">
-            <h2>Our Shop</h2>
+            <h2>OUR GADGETS</h2>
             <div id="product-grid" class="grid-container">
                 <div class="product-card" data-id="p1">
-                    <img src="Project Files (Frontend)/Project Files/Images/product1.png" alt="Samsung TV">
-                    <h3>Samsung TV</h3>
+                    <img src="Images/product1.png" alt="Samsung TV">
+                    <h3>SAMSUNG TV</h3>
                     <p class="price">GH₵ 5,000</p>
                     <button class="add-to-cart-btn" data-id="p1">Add to Cart</button>
                 </div>
                 
                 <div class="product-card" data-id="p2">
-                    <img src="Project Files (Frontend)/Project Files/Images/product2.png" alt="Pixel 4a">
-                    <h3>Pixel 4a</h3>
+                    <img src="Images/product2.png" alt="Pixel 4a">
+                    <h3>PIXEL 4a</h3>
                     <p class="price">GH₵ 2,500</p>
                     <button class="add-to-cart-btn" data-id="p2">Add to Cart</button>
                 </div>
 
                 <div class="product-card" data-id="p3">
-                    <img src="Project Files (Frontend)/Project Files/Images/product3.png" alt="PS 5">
+                    <img src="Images/product3.png" alt="PS 5">
                     <h3>PS 5</h3>
                     <p class="price">GH₵ 3,000</p>
                     <button class="add-to-cart-btn" data-id="p3">Add to Cart</button>
                 </div>
 
                 <div class="product-card" data-id="p4">
-                    <img src="Project Files (Frontend)/Project Files/Images/product4.png" alt="MacBook Air">
-                    <h3>MacBook Air</h3>
+                    <img src="Images/product4.png" alt="MacBook Air">
+                    <h3>MACBOOK AIR</h3>
                     <p class="price">GH₵ 8,000</p>
                     <button class="add-to-cart-btn" data-id="p4">Add to Cart</button>
                 </div>
 
                 <div class="product-card" data-id="p5">
-                    <img src="Project Files (Frontend)/Project Files/Images/product5.png" alt="Apple Watch">
-                    <h3>Apple Watch</h3>
+                    <img src="Images/product5.png" alt="Apple Watch">
+                    <h3>APPLE WATCH</h3>
                     <p class="price">GH₵ 950</p>
                     <button class="add-to-cart-btn" data-id="p5">Add to Cart</button>
                 </div>
 
                 <div class="product-card" data-id="p6">
-                    <img src="Project Files (Frontend)/Project Files/Images/product6.png" alt="Air Pods">
-                    <h3>Air Pods</h3>
+                    <img src="Images/product6.png" alt="Air Pods">
+                    <h3>AIR PODS</h3>
                     <p class="price">GH₵ 750</p>
                     <button class="add-to-cart-btn" data-id="p6">Add to Cart</button>
                 </div>
@@ -86,17 +89,16 @@
 
     <footer>
         <div class="logo">
-            <img src="Project Files (Frontend)/Project Files/Images/EMS.svg" alt="E-Millennial Logo" style="height: 40px; display: block;">
+            <img src="Images/EMS.svg" alt="E-Millennial Logo" style="height: 40px; display: block;">
         </div>
-        <div class="footer-right">&copy; 2026 E-Millennial Store. All rights reserved.</div>
+        <div class="footer-right">Designed and Crafted by a Frontend Ninja &copy; 2026 E-Millennial Store. All rights reserved.</div>
     </footer>
 
     <div id="cart-modal" class="modal-overlay hidden">
         <div class="modal-content">
             <h2>Your Shopping Cart</h2>
             
-            <div id="cart-items-container">
-                </div>
+            <div id="cart-items-container"></div>
 
             <form id="checkout-form">
                 <h3>Delivery Details</h3>
